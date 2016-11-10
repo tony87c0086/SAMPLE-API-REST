@@ -13,7 +13,7 @@
 	<annotation-driven />
 	
 	<!-- Activates scanning of @Repository, @Service and @Component especially for JSON return value purposes -->
-	<context:component-scan base-package="com.uknowho.sample.api"/>
+	<context:component-scan base-package="com.uknowho.sample.rest.api"/>
 	
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 

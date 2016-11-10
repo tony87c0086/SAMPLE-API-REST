@@ -34,14 +34,14 @@
     	<beans:property name="realmName" value="www.uknowho.com" />
     </beans:bean> 
     
-	<beans:bean id="customBasicAuthenticationFilter" class="com.uknowho.sample.filter.CustomBasicAuthenticationFilter">
+	<beans:bean id="customBasicAuthenticationFilter" class="com.uknowho.sample.rest.filter.CustomBasicAuthenticationFilter">
         <beans:constructor-arg name="customAuthenticationManager" ref="customAuthenticationManager" />
         <beans:constructor-arg name="customAuthenticationEntryPoint" ref="customAuthenticationEntryPoint" />
     </beans:bean>
     
-	<beans:bean id="authenticationAdvice" class="com.uknowho.sample.advice.AuthenticationAdvice"></beans:bean>
-   	<beans:bean id="customUserDetailService" class="com.uknowho.sample.security.CustomUserDetailService"></beans:bean>
-   	<beans:bean id="customAuthenticationProvider" class="com.uknowho.sample.security.CustomAuthenticationProvider">
+	<beans:bean id="authenticationAdvice" class="com.uknowho.sample.rest.advice.AuthenticationAdvice"></beans:bean>
+   	<beans:bean id="customUserDetailService" class="com.uknowho.sample.rest.security.CustomUserDetailService"></beans:bean>
+   	<beans:bean id="customAuthenticationProvider" class="com.uknowho.sample.rest.security.CustomAuthenticationProvider">
    		<beans:constructor-arg ref="customUserDetailService"></beans:constructor-arg>
    		<beans:constructor-arg ref="bCryptEncoder"></beans:constructor-arg>
    	</beans:bean>

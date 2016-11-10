@@ -16,8 +16,8 @@
     
     <!-- Activates scanning of @Repository, @Service and @Component-->
     <!-- Not including @Transactional, DAO need to be init in HibernateContent -->
-    <context:component-scan base-package="com.uknowho.sample" >
-		<context:exclude-filter type="regex" expression="com.uknowho.sample.*.impl" />
+    <context:component-scan base-package="com.uknowho.sample.rest" >
+		<context:exclude-filter type="regex" expression="com.uknowho.sample.rest.*.impl" />
 	</context:component-scan>
      
     <!-- Custom Bean Definition -->

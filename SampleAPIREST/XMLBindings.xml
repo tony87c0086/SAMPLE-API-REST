@@ -8,7 +8,7 @@
 
    	<jxb:bindings schemaLocation="src/main/resources/schema/XMLCatalogueSchema.xsd" node="/xs:schema">
         <jxb:schemaBindings>
-            <jxb:package name="com.uknowho.sample.xmlmodel" />
+            <jxb:package name="com.uknowho.sample.rest.xmlmodel" />
         </jxb:schemaBindings>
     </jxb:bindings>
     
