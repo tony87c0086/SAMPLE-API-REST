@@ -1,4 +1,4 @@
-package com.uknowho.sample.rest.config;
+package com.uknowho.sample.rest.advice;
 
 /**
  * This APIPathAdvice class is Default each API URL constants configuration . 

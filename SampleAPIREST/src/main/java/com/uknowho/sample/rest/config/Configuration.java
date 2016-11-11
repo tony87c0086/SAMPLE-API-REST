@@ -38,6 +38,10 @@ public class Configuration extends PropertyPlaceholderConfigurer {
 	public static final int CATALOGUE_SERVICE_CODE = 10;
 	
 	// API security setting
+	public static final String SESSION_TOKEN_KEY = "sessionkey";
+	public static final String SECURITY_TOKEN_KEY = "securitykey";
+	
+	public static final int DEFAULT_API_TIMEOUT_HOUR = 1;
 
 	// Utility setting
 	public static final double FILE_SIZE_CURRENCY = 1024;

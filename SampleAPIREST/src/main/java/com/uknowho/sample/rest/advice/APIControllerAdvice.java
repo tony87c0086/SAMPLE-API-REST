@@ -1,4 +1,4 @@
-package com.uknowho.sample.rest.config;
+package com.uknowho.sample.rest.advice;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.HttpMediaTypeNotAcceptableException;
 import org.springframework.web.HttpMediaTypeNotSupportedException;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
@@ -100,6 +101,26 @@ public class APIControllerAdvice {
 		response.setSuccess(false);
 		
 		return new ResponseEntity<ResponseModel>(response, HttpStatus.SERVICE_UNAVAILABLE);
+	}
+	
+	@ExceptionHandler(UsernameNotFoundException.class)
+	@ResponseStatus(value=HttpStatus.UNAUTHORIZED)
+	public ResponseEntity<ResponseModel> handleBasicAuthenticationException(
+			final UsernameNotFoundException ex) {
+		
+		logger.error("handleBasicAuthenticationException called.");
+		
+		ResponseModel response = new ResponseModel();
+		MessageModel message = new MessageModel();
+		
+		message.setCode(HttpStatus.UNAUTHORIZED.toString());
+		message.setMessage(ErrorMessageConstant.AUTHENTICATION_USER_NOT_FOUND);
+		
+		response.getMessage().add(message);
+		response.setMoreInfo(MORE_INFO_URL + "/basic_authentication");
+		response.setSuccess(false);
+		
+		return new ResponseEntity<ResponseModel>(response, HttpStatus.UNAUTHORIZED);
 	}
 	
 	// 404 Error 

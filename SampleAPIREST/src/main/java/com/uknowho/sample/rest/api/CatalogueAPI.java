@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.uknowho.sample.rest.abstracts.SampleAPIAbstract;
-import com.uknowho.sample.rest.config.APIPathAdvice;
+import com.uknowho.sample.rest.advice.APIPathAdvice;
 import com.uknowho.sample.rest.exception.APIException;
 import com.uknowho.sample.rest.exception.ResponseException;
 import com.uknowho.sample.rest.service.CatalogueService;
