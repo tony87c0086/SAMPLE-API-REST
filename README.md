@@ -59,6 +59,9 @@
   -- Configuration represents the configuration.
   -- Exception implements customized exceptions.
   
+* Application setting
+  -- Refer to (../src/main/resources/config/*, ../src/main/resources/webapp/WEB-INF/*)
+  
 ### Who do I talk to? ###
 
 * Repo owner or admin(tony87c0086@hotmail.com)
