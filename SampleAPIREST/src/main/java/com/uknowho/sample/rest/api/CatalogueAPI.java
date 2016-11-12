@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.uknowho.sample.rest.abstracts.SampleAPIAbstract;
+import com.uknowho.sample.rest.abstracts.APIAbstract;
 import com.uknowho.sample.rest.advice.APIPathAdvice;
 import com.uknowho.sample.rest.exception.APIException;
 import com.uknowho.sample.rest.exception.ResponseException;
@@ -45,7 +45,7 @@ import com.uknowho.sample.rest.xmlmodel.SortModel;
 
 @RestController
 @RequestMapping(APIPathAdvice.DEFAULT_API)
-public class CatalogueAPI extends SampleAPIAbstract {
+public class CatalogueAPI extends APIAbstract {
 
 	private static final Logger logger = LoggerFactory.getLogger(CatalogueAPI.class);
 	
@@ -83,7 +83,7 @@ public class CatalogueAPI extends SampleAPIAbstract {
 			method = RequestMethod.GET, 
 			consumes = MediaType.APPLICATION_JSON_VALUE, 
 			produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<CatalogueModel>> listCatalogueTypeAPI(
+	public ResponseEntity<List<CatalogueModel>> listCatalogueAPI(
 			HttpServletRequest request, 
 			@QueryParam("parentid") final Integer parentid, 
 			@QueryParam("typeid") final Integer typeid, 

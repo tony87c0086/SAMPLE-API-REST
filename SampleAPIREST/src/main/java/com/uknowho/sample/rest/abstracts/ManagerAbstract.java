@@ -10,7 +10,6 @@ import com.uknowho.sample.rest.constant.ErrorMessageConstant;
 import com.uknowho.sample.rest.entity.Catalogue;
 import com.uknowho.sample.rest.exception.ServiceException;
 import com.uknowho.sample.rest.utility.DateAdapter;
-import com.uknowho.sample.rest.utility.IDGenerator;
 import com.uknowho.sample.rest.xmlmodel.CatalogueModel;
 
 /**
@@ -25,15 +24,13 @@ import com.uknowho.sample.rest.xmlmodel.CatalogueModel;
  * 
  */
 
-public abstract class SampleManagerAbstract {
+public abstract class ManagerAbstract {
 
-	private static final Logger logger = LoggerFactory.getLogger(SampleManagerAbstract.class);
+	private static final Logger logger = LoggerFactory.getLogger(ManagerAbstract.class);
 	
-	protected IDGenerator IDGenerator;
 	
-	protected SampleManagerAbstract() {
+	protected ManagerAbstract() {
 		//	logger.info("ManagerAbstract construction method load.");
-		IDGenerator = new IDGenerator();
 	}
 	
 	/** --------------------------------------------------------------------------------

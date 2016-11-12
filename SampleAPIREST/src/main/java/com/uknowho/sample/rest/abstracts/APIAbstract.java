@@ -25,11 +25,11 @@ import com.uknowho.sample.rest.xmlmodel.SortModel;
  * 
  */
 
-public abstract class SampleAPIAbstract {
+public abstract class APIAbstract {
 
-	private static final Logger logger = LoggerFactory.getLogger(SampleAPIAbstract.class);
+	private static final Logger logger = LoggerFactory.getLogger(APIAbstract.class);
 	
-	protected SampleAPIAbstract() {
+	protected APIAbstract() {
 		//	logger.info("APIAbstract construction method load.");
 	}
 	

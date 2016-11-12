@@ -20,24 +20,12 @@ public class ErrorMessageConstant {
 	
 	public static final String OBJECT_NOT_FOUND = 
 			"Object not found.";
-	public static final String EMPTY_QUEUE = 
-			"Queue is empty while processing.";
-	public static final String EMPTY_STACK = 
-			"Stack is empty while processing.";
 
-	public static final String STRING_EMPTY = 
-			"String is either null or empty.";
-	public static final String STRING_INVALID = 
-			"String format is not valid, should not contain special characters.";
-	
 	// DB error message constants
-	public static final String HIBERNATE_EXCEPTION = 
-			"Error while processing hibernate database request.";
 	
 	public static final String RECORD_NOT_FOUND = " Record(s) not found from database.";
 	public static final String CONSTRAINT_FAILURE = "Record already exists in database."; 
-	public static final String RECORD_DELETE_FAILURE = 
-			"Error while processing deleting record from database.";
+
 	public static final String RECORD_SAVE_FAILURE = 
 			"Error while processing saving record into database, "
 			+ "id is not required for saving new record, "
@@ -58,7 +46,6 @@ public class ErrorMessageConstant {
 			"Error while copying entity from model.";
 	
 	public static final String CREATE_ENTITY_EXCEPTION = "Error while creating new entity.";
-	public static final String CREATE_MODEL_EXCEPTION = "Error while creating new model.";
 	
 	public static final String MODEL_MAPPING_EXCEPTION = "Error while mapping object(s).";
 	
@@ -67,10 +54,6 @@ public class ErrorMessageConstant {
 			"Catalogue is not found from database for further processing request.";
 	public static final String CATALOGUE_MODEL_NOT_FOUND = 
 			"Catalogue model is not found for further processing request.";
-	public static final String CATALOGUE_ID_NOT_FOUND = 
-			"Catalogue id is not found from model for further processing request.";
-	public static final String CATALOGUE_KEY_WORD_NOT_FOUND = 
-			"Key word(s) could not be empty for searching catalogue(s).";
 
 	// Service error message constants
 	public static final String CATALOGUE_SERVICE_ID_NOT_FOUND = 
@@ -93,11 +76,6 @@ public class ErrorMessageConstant {
 			"Sorry, username could not be null or empty "
 			+ "or contain any special characters, "
 			+ "please check before processing.";
-	
-	public static final String AUTHENTICATION_SERVICE_USERNAME_NOT_FOUND = 
-			"Sorry, User name is either empty or not valid for further processing request.";
-	public static final String AUTHENTICATION_SERVICE_PASSWORD_NOT_FOUND = 
-			"Sorry, Password is either empty or not valid for further processing request.";
 	
 	public static final String AUTHENTICATION_USER_NOT_FOUND = 
 			"Sorry, user not found according to passing authentication username, "

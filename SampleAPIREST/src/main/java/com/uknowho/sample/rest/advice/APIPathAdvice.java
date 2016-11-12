@@ -19,7 +19,7 @@ public class APIPathAdvice {
 	public static final String INDEX_PAGE = "/index.jsp";
 	public static final String HOME_PAGE = "/";
 	
-	public static final String DEFAULT_API = "/api";
+	public static final String DEFAULT_API = "/sample";
 	public static final String API_MORE_INFO = "/moreinfo";
 	
 	public static final String CATALOGUES = "/catalogues";
