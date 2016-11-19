@@ -61,7 +61,7 @@
   
 * Unit test
   * Refer to package(test)
-  * Test including hibernate & utility
+  * Test including API, hibernate & utility
   
 * Application setting
   * Refer to (../src/main/resources/config/*, ../src/main/resources/webapp/WEB-INF/*)
