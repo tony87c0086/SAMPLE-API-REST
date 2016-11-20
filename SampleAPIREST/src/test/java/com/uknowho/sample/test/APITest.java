@@ -14,7 +14,7 @@ import com.uknowho.sample.rest.api.CatalogueAPI;
 import com.uknowho.sample.rest.xmlmodel.CatalogueModel;
 
 /**
- * This APITest class provides test cases for API cases.
+ * This APITest class provides test cases for REST API cases.
  * 
  * Created date <21-Jul-2016>
  * 	
