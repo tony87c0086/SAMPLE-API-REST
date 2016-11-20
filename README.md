@@ -30,6 +30,9 @@
   * Advice represents the user information & refresh mechanical, change to read form external .properties file if needed.
   * Task represents the timer for reset hour rate & invalid attampts, etc.
   
+* Spring Boot
+  * Using Spring Boot to simplify dependency management.
+  
 ### NOTE: The structure and component below is mostly same as my other SOAP sample. They CAN be a dependency JAR file or files depends on your application needs. This gives flexibility to swith between REST/SOAP or any other new technologies might comming. Yes, finger cross! ###
 
 * Manager + Service 
